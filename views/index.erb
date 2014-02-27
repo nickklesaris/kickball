@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @chosen_team %></title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1><%= @chosen_team %></h1>
+
+    <ul>
+      <% @team_members.each do |member| %>
+        <li><%= member %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
